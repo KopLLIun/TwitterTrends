@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace TwiterTrends.Utility
 {
@@ -20,6 +22,45 @@ namespace TwiterTrends.Utility
                 * Math.Cos(latitude_0) * Math.Cos(latitude_1);
             double c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
             return RADIUS * c;
+        }
+
+        //Calculate centroid of polygon
+        public static Point CalculateGeoCenter(JArray coordinates)
+        {
+            double ceneterLatitude = 0;
+            double ceneterLongitude = 0;
+            double area = 0;
+
+            if (coordinates.Count == 1)
+            {
+                for (int j = 0; j < coordinates[0].Count() - 1; j++)
+                {
+                    double s = ((Double.Parse(coordinates[0][j][0].ToString()) * Double.Parse(coordinates[0][j + 1][1].ToString())) -
+                        (Double.Parse(coordinates[0][j + 1][0].ToString()) * Double.Parse(coordinates[0][j][1].ToString())));
+                    area += 0.5 * s;
+                    ceneterLatitude += (1 / (6 * area)) *
+                        ((Double.Parse(coordinates[0][j][0].ToString()) * Double.Parse(coordinates[0][j + 1][0].ToString())) * s);
+                    ceneterLongitude += (1 / (6 * area)) *
+                        ((Double.Parse(coordinates[0][j][1].ToString()) * Double.Parse(coordinates[0][j + 1][1].ToString())) * s);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < coordinates.Count; i++)
+                {
+                    for (int k = 0; k < coordinates[i][0].Count() - 1; k++)
+                    {
+                        double s = ((Double.Parse(coordinates[i][0][k][0].ToString()) * Double.Parse(coordinates[i][0][k + 1][1].ToString())) -
+                            (Double.Parse(coordinates[i][0][k + 1][0].ToString()) * Double.Parse(coordinates[i][0][k][1].ToString())));
+                        area += 0.5 * s;
+                        ceneterLatitude += (1 / (6 * area)) *
+                            ((Double.Parse(coordinates[i][0][k][0].ToString()) * Double.Parse(coordinates[i][0][k + 1][0].ToString())) * s);
+                        ceneterLongitude += (1 / (6 * area)) *
+                            ((Double.Parse(coordinates[i][0][k][1].ToString()) * Double.Parse(coordinates[i][0][k + 1][1].ToString())) * s);
+                    }
+                }
+            }
+            return new Point(ceneterLatitude, ceneterLongitude);
         }
     }
 }

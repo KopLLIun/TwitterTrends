@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Windows;
 using TwiterTrends.Business_Layer;
 using TwiterTrends.Data_Layer;
 using TwiterTrends.Utility;
@@ -52,6 +53,7 @@ namespace TwiterTrends.Service_Layer
 
         }
 
+        //TODO
         public Dictionary<string, List<Tweet>> GroupTweetsByState()
         {
             Dictionary<string, List<Tweet>> tweetsByState = new Dictionary<string, List<Tweet>>();
@@ -59,29 +61,41 @@ namespace TwiterTrends.Service_Layer
             List<State> states = stateDao.GetStates();
             foreach (Tweet tweet in tweets)
             {
-                foreach (State state in states)
-                {
-                    if (state.Coordinates.Count == 1)
-                    {
-                        for (int j = 0; j < state.Coordinates[0].Count(); j++) {
-                            double distance = GeoLocation.CalculateGeoDistance(tweet.Latitude, tweet.Longitude,
-                                Double.Parse(state.Coordinates[0][j][1].ToString()), Double.Parse(state.Coordinates[0][j][1].ToString()));
-                        }
-                    }
-                    else
-                    {
-                        for (int i = 0; i < state.Coordinates.Count; i++)
-                        {
-                            for (int k = 0; k < state.Coordinates[i][0].Count(); k++)
-                            {
-                                double distance = GeoLocation.CalculateGeoDistance(tweet.Latitude, tweet.Longitude,
-                                    Double.Parse(state.Coordinates[i][0][k][0].ToString()), Double.Parse(state.Coordinates[i][0][k][1].ToString()));
-                            }
-                        }
-                    }
-                }
+                Dictionary<string, double> tweetCenterDistance = GetTweetCenterDistance(states, tweet);
+                string key = tweetCenterDistance.OrderBy(k => k.Value).FirstOrDefault().Key;
+                tweetsByState.Add(key, new List<Tweet>());
+                tweetsByState[key].Add(tweet);
+
+                //TODO some operations to calculate min distance and group tweet by state
+
+
+                //List<double> tweetCenterDistance = new List<double>();
+                //foreach (KeyValuePair<string, Point> stateCenter in stateCenters)
+                //{
+                //    tweetCenterDistance.Add(GeoLocation.CalculateGeoDistance(stateCenter.Value.X, stateCenter.Value.Y, 
+                //        tweet.Latitude, tweet.Longitude));
+                //    //TODO some oeperations 
+                //    tweetsByState.Add(stateCenter.Key, new List<Tweet>());
+                //}
             }
             return tweetsByState;
+        }
+
+        private Point GetCentersStatesPolygon(List<State> states)
+        {
+
+            return new Point();
+        }
+
+        private Dictionary<string, double> GetTweetCenterDistance(List<State> states, Tweet tweet)
+        {
+            Dictionary<string, double> tweetCenterDistance = new Dictionary<string, double>(states.Count);
+            foreach (State state in states)
+            {
+                Point pointCenter = GeoLocation.CalculateGeoCenter(state.Coordinates);
+                tweetCenterDistance.Add(state.Name, GeoLocation.CalculateGeoDistance(pointCenter.X, pointCenter.Y, tweet.Latitude, tweet.Longitude));
+            }
+            return tweetCenterDistance;
         }
 
         public List<Tweet> GetTweets()

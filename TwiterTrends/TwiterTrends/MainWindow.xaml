@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:TwiterTrends"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Name="Grid" Margin="186,88,189.6,101">
+        <Canvas x:Name="aaa">
+            
+        </Canvas>
     </Grid>
 </Window>

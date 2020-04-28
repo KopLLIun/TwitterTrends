@@ -10,9 +10,10 @@ namespace TwiterTrends.Business_Layer
 {
     class TweetDaoImpl : ITweetDao
     {
+        private string fileName = "C:\\Ksenia\\tweets.txt";
         public List<Tweet> GetTweets()
         {
-            return TweetParser.ParseTweets("C:\\Ksenia\\tweets.txt");
+            return TweetParser.ParseTweets(fileName);
         }
     }
 }
