@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "author": "Ransom Riggs",
+      "title": " Miss Peregrine's Home for Peculiar Children"
+    },
+    {
+      "author": "Ransom Riggs",
+      "title": " Hollow City"
+    },
+    {
+      "author": "Ransom Riggs",
+      "title": " Library of Souls"
+    },
+    {
+      "author": "Ray Bradbury",
+      "title": " Dandelion Wine"
+    },
+    {
+      "author": "Ray Bradbury",
+      "title": " Fahrenheit 451"
+    },
+    {
+      "author": "Ray Bradbury",
+      "title": " The Illustrated Man"
+    },
+    {
+
+      "author": "Agatha Cristie",
+      "title": " The Secret of Chimneys"
+    },
+    {
+      "author": "Agatha Cristie",
+      "title": " The Murder of Roger Ackroyd"
+    },
+    { "author": "Agatha Cristie",
+      "title": " The Mystery of the Blue Train"
+    }
+  ]
+}
