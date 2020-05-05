@@ -16,41 +16,42 @@ namespace TwiterTrends.Service_Layer
         private ITweetDao tweetDao = new TweetDaoImpl();
         private ISentimentDao sentimentDao = new SentimentDaoImpl();
         private IStateDao stateDao = new StateDaoImpl();
-        public double[] AnalizeTweetSentiment()
+        public Dictionary<string, double> AnalizeTweetSentiment(List<Tweet> tweets)
         {
-            List<Tweet> tweets = tweetDao.GetTweets();
-            double[] sentimentWeight = new double[tweets.Count];
-            Dictionary<string, double> sentiments = sentimentDao.GetSentiments();
-            int index = 0;
+            //List<Tweet> tweets = tweetDao.GetTweets();
+            Dictionary<string, double> sentimentWeight = new Dictionary<string, double>(tweets.Count);
             foreach (Tweet tweet in tweets)
             {
-                foreach (KeyValuePair<string, double> valuePair in sentiments)
+                if (!sentimentWeight.ContainsKey(tweet.Comment))
                 {
-                    if (tweet.Comment.Contains(valuePair.Key))
+                    sentimentWeight.Add(tweet.Comment, 0);
+                }
+                string[] tweetWords = ExtractTweetWords(tweet);
+                int countMatches = 0;
+                for (int i = 0; i < tweetWords.Length; i++)
+                {
+                    foreach (KeyValuePair<string, double> valuePair in sentimentDao.GetSentiments())
                     {
-                        sentimentWeight[index] += valuePair.Value;
+                        if (tweetWords[i].Equals(valuePair.Value))
+                        {
+                            countMatches++;
+                            sentimentWeight[tweet.Comment] += valuePair.Value;
+                        }
                     }
                 }
-                index++;
+                sentimentWeight[tweet.Comment] /= countMatches; 
             }
             return sentimentWeight;
         }
-        
-        //param - string tweetComment
-        public List<string[]> ExtractTweetWords()
-        {
-            List<Tweet> tweets = tweetDao.GetTweets();
-            List<string[]> tweetWords = new List<string[]>(tweets.Count);
-            for (int index = 0; index < tweets.Count; index++)
-            {
-                //My list of punctuation characters
-                //string[] words = Regex.Split(tweets[index].Comment, @"[ ,\\.:;\\?!—]");
-                //All punctuation characters from unicode
-                string[] words = Regex.Split(tweets[index].Comment, @"\p{P}| ");
-                tweetWords.Add(words);
-            }
-            return tweetWords;
 
+        //param - string tweetComment
+        private string[] ExtractTweetWords(Tweet tweet)
+        {
+            //List<Tweet> tweets = tweetDao.GetTweets();
+            //My list of punctuation characters
+            //string[] words = Regex.Split(tweets[index].Comment, @"[ ,\\.:;\\?!—]");
+            //All punctuation characters from unicode
+            return Regex.Split(tweet.Comment, @"\p{P}| ");
         }
 
         //TODO
@@ -63,7 +64,10 @@ namespace TwiterTrends.Service_Layer
             {
                 Dictionary<string, double> tweetCenterDistance = GetTweetCenterDistance(states, tweet);
                 string key = tweetCenterDistance.OrderBy(k => k.Value).FirstOrDefault().Key;
-                tweetsByState.Add(key, new List<Tweet>());
+                if (!tweetsByState.ContainsKey(key)) 
+                { 
+                    tweetsByState.Add(key, new List<Tweet>());
+                }
                 tweetsByState[key].Add(tweet);
 
                 //TODO some operations to calculate min distance and group tweet by state

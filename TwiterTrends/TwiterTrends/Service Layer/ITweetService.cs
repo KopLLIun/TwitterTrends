@@ -12,10 +12,7 @@ namespace TwiterTrends.Service_Layer
     {
         List<Tweet> GetTweets();
 
-        double[] AnalizeTweetSentiment();
-
-        //param - string tweetComment
-        List<string[]> ExtractTweetWords();
+        Dictionary<string, double> AnalizeTweetSentiment(List<Tweet> tweets);
 
         Dictionary<string, List<Tweet>> GroupTweetsByState();
     }
