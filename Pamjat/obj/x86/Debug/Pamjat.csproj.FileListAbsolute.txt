@@ -1,0 +1,45 @@
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\bin\Debug\ОС.Лаба4.exe
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\bin\Debug\ОС.Лаба4.pdb
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.Form1.resources
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.Properties.Resources.resources
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.exe
+D:\Studing\Univercity\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.pdb
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.exe
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.pdb
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\bin\Debug\ОС.Лаба4.exe
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\bin\Debug\ОС.Лаба4.pdb
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.Form1.resources
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.Properties.Resources.resources
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\Instal\Для учёбы\Операционные системы и системное программирование\ОС\ОС 2\Labs_for_programming\ОС.Лаба4\ОС.Лаба4\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.exe
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.pdb
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\bin\Debug\ОС.Лаба4.exe
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\bin\Debug\ОС.Лаба4.pdb
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.Form1.resources
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\obj\x86\Debug\ОС.Лаба4.Properties.Resources.resources
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Лаба 4\ОС.Лаба4\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\bin\Debug\ОС.Лаба4.exe
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\bin\Debug\ОС.Лаба4.pdb
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\obj\x86\Debug\ResolveAssemblyReference.cache
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.Form1.resources
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.Properties.Resources.resources
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\obj\x86\Debug\GenerateResource.read.1.tlog
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\obj\x86\Debug\GenerateResource.write.1.tlog
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.exe
+d:\Instal\Для учёбы\Операционные системы и системное программирование\Lab4\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.pdb
+C:\Ksenia\Pamjat\Pamjat\bin\Debug\ОС.Лаба4.exe
+C:\Ksenia\Pamjat\Pamjat\bin\Debug\ОС.Лаба4.pdb
+C:\Ksenia\Pamjat\Pamjat\obj\x86\Debug\Pamjat.csprojAssemblyReference.cache
+C:\Ksenia\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.Form1.resources
+C:\Ksenia\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.Properties.Resources.resources
+C:\Ksenia\Pamjat\Pamjat\obj\x86\Debug\Pamjat.csproj.GenerateResource.cache
+C:\Ksenia\Pamjat\Pamjat\obj\x86\Debug\Pamjat.csproj.CoreCompileInputs.cache
+C:\Ksenia\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.exe
+C:\Ksenia\Pamjat\Pamjat\obj\x86\Debug\ОС.Лаба4.pdb
