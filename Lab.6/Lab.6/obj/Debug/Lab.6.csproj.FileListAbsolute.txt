@@ -1,0 +1,18 @@
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\bin\Debug\Lab.6.exe.config
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\bin\Debug\Lab.6.exe
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\bin\Debug\Lab.6.pdb
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\obj\Debug\Lab.6.csprojAssemblyReference.cache
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\obj\Debug\Lab._6.Properties.Resources.resources
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\obj\Debug\Lab.6.csproj.GenerateResource.cache
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\obj\Debug\Lab.6.csproj.CoreCompileInputs.cache
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\obj\Debug\Lab.6.exe
+D:\4 семестр\Операционные системы\Lab.6\Lab.6\Lab.6\obj\Debug\Lab.6.pdb
+C:\Ksenia\Lab.6\Lab.6\bin\Debug\Lab.6.exe.config
+C:\Ksenia\Lab.6\Lab.6\bin\Debug\Lab.6.exe
+C:\Ksenia\Lab.6\Lab.6\bin\Debug\Lab.6.pdb
+C:\Ksenia\Lab.6\Lab.6\obj\Debug\Lab.6.csprojAssemblyReference.cache
+C:\Ksenia\Lab.6\Lab.6\obj\Debug\Lab._6.Properties.Resources.resources
+C:\Ksenia\Lab.6\Lab.6\obj\Debug\Lab.6.csproj.GenerateResource.cache
+C:\Ksenia\Lab.6\Lab.6\obj\Debug\Lab.6.csproj.CoreCompileInputs.cache
+C:\Ksenia\Lab.6\Lab.6\obj\Debug\Lab.6.exe
+C:\Ksenia\Lab.6\Lab.6\obj\Debug\Lab.6.pdb
